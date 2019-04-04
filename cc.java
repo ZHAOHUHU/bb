@@ -40,7 +40,7 @@ public class NettyServer {
             b.option(ChannelOption.TCP_NODELAY, true);
             b.option(ChannelOption.SO_BACKLOG, 1024);
             b.childHandler(new ChannelInitializer<SocketChannel>() {
- 
+ dfgdfsgdfsg
                 @Override
                 protected void initChannel(SocketChannel ch) throws Exception {
                     //decoded
@@ -51,7 +51,7 @@ public class NettyServer {
                     ch.pipeline().addLast(new ProtobufDecoder(Example.BaseData.getDefaultInstance(), registry));
                     //encoded
                     ch.pipeline().addLast(new ProtobufVarint32LengthFieldPrepender());
-                    ch.pipeline().addLast(new ProtobufEncoder());
+                    ch.pipeline().addLast(new ProtobufEncoder());士大夫似的的萨芬但是发多少 分时段
                     // 注册handler
                     ch.pipeline().addLast(new ProtoBufServerHandler());
                 }
