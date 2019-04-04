@@ -40,7 +40,7 @@ public class NettyServer {
             b.option(ChannelOption.TCP_NODELAY, true);
             b.option(ChannelOption.SO_BACKLOG, 1024);
             b.childHandler(new ChannelInitializer<SocketChannel>() {
- dfgdfsgdfsg
+ dfgdfsgdfsg撒发的撒发大水f
                 @Override
                 protected void initChannel(SocketChannel ch) throws Exception {
                     //decoded
