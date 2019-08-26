@@ -12,6 +12,7 @@ public class Person {
 
 
     public static void main(String[] args) {
+//野孩子
         System.out.println("mingzhiaizhezhongnanhaizi ");
     }
 }
